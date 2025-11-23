@@ -4,8 +4,8 @@ namespace BigNumber {
     /**
      * Format a number into short form (1k, 1m, etc.)
      */
-    //% blockId=bigNumber_format
-    //% block="format big number %value"
+    //% blockId=bignumber_format
+    //% block="format number %value"
     //% value.shadow=number
     export function format(value: number): string {
         if (value >= 1000000) {
