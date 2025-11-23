@@ -1,18 +1,19 @@
-//% color=#00AAFF icon="\uf201"
+//% color=#00AAFF icon="\uF201"
 namespace BigNumber {
 
     /**
      * Format a number into short form (1k, 1m, etc.)
      */
-    //% block="format number %num"
-    //% num.shadow=number
-    export function format(num: number): string {
-        if (num >= 1000000) {
-            return Math.round(num / 100000) / 10 + "m"
-        } else if (num >= 1000) {
-            return Math.round(num / 100) / 10 + "k"
+    //% blockId=bigNumber_format
+    //% block="format big number %value"
+    //% value.shadow=number
+    export function format(value: number): string {
+        if (value >= 1000000) {
+            return Math.round(value / 100000) / 10 + "m"
+        } else if (value >= 1000) {
+            return Math.round(value / 100) / 10 + "k"
         } else {
-            return num + ""
+            return value + ""
         }
     }
 }
