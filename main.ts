@@ -1,4 +1,9 @@
+//% color=#00AAFF icon="\uf201"
 namespace BigNumber {
+
+    /**
+     * Format a number into short form (1k, 1m, etc.)
+     */
     //% block="format number %num"
     //% num.shadow=number
     export function format(num: number): string {
