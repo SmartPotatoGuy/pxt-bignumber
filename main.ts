@@ -1,4 +1,4 @@
-//% color=#00AAFF icon="\uF201"
+//% color=#00AAFF icon="\uf201"
 namespace BigNumber {
 
     /**
